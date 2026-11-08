@@ -3,7 +3,7 @@
   "name": "Démineur",
   "version": "1.1.1",
   "author": "NDesumeur",
-  "description": "Ouvre toutes les cases sans mine : drapeaux, niveaux, grilles sans hasard.",
+  "description": "Le démineur classique : ouvre toutes les cases sans mine en lisant les chiffres, pose des drapeaux au clic droit et ouvre les voisines d'un chiffre en un clic. Débutant, Intermédiaire, Expert ou plateau sur mesure, premier clic toujours sûr, mode « sans hasard » qui se résout entièrement par la logique, indices, et meilleurs temps et séries par niveau.",
   "icon": "icon.png",
   "entry": "index.js",
   "view": "demineur",
