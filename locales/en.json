@@ -11,7 +11,6 @@
  "INDICE": "HINT",
  "Intermédiaire": "Intermediate",
  "Le clic droit pose un drapeau, puis un « ? »": "Right-clicking places a flag, then a “?” »",
- "Le démineur classique : ouvre toutes les cases sans mine en lisant les chiffres, pose des drapeaux au clic droit et ouvre les voisines d'un chiffre en un clic. Débutant, Intermédiaire, Expert ou plateau sur mesure, premier clic toujours sûr, mode « sans hasard » qui se résout entièrement par la logique, indices, et meilleurs temps et séries par niveau.": "Classic minesweeper: open every mine-free cell by reading the numbers, flag with a right-click and open a number's neighbours in one click. Beginner, Intermediate, Expert or a custom board, first click always safe, a \"no guessing\" mode solvable entirely by logic, hints, and best times and streaks per level.",
  "Le plateau se résout toujours par la logique, sans jamais devoir deviner": "The board is always solved by logic, without ever having to guess",
  "Meilleurs temps.": "Best times.",
  "NOUVEAU RECORD !": "NEW RECORD!",
@@ -23,5 +22,9 @@
  "Sans hasard": "Without chance",
  "Taille du plateau": "Tray size",
  "gagnées · série": "won · series",
- "largeur x hauteur x mines, par exemple 24 x 18 x 70": "width x height x mines, for example 24 x 18 x 70"
+ "largeur x hauteur x mines, par exemple 24 x 18 x 70": "width x height x mines, for example 24 x 18 x 70",
+ "Le démineur classique : ouvre toutes les cases sans mine en lisant les chiffres, pose des drapeaux au clic droit et ouvre les voisines d'un chiffre en un clic. Débutant, Intermédiaire, Expert ou plateau sur mesure, premier clic toujours sûr, mode « sans hasard » qui se résout entièrement par la logique, indices, et meilleurs temps et séries par niveau. En pixel art, avec des cases en relief et de gros chiffres colorés, une grille qui prend toute la place de l'écran, et le plein écran.": "Classic minesweeper: open every mine-free cell by reading the numbers, flag with a right-click and open a number's neighbours in one click. Beginner, Intermediate, Expert or a custom board, first click always safe, a \"no guessing\" mode solvable entirely by logic, hints, and best times and streaks per level. In pixel art, with raised tiles and big coloured numbers, a grid that uses the whole screen, and fullscreen.",
+ "PLEIN ÉCRAN": "FULLSCREEN",
+ "DÉMINEUR": "MINESWEEPER",
+ "VISAGE : REJOUER": "FACE: PLAY AGAIN"
 }

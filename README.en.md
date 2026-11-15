@@ -10,6 +10,9 @@ Classic minesweeper: open every cell that does not hide a mine, using the number
 - **Right-click**: place a flag, then a "?", then nothing.
 - **Click a number** whose flags are all placed (or **middle-click**, or **both buttons** at once): opens all its neighbours at once.
 - **Click the face**: new game.
+- **FULLSCREEN**: the grid alone, over the whole screen.
+
+The grid takes all the room left under the header: on a big screen, the tiles get bigger. Closed tiles are raised, numbers are big, coloured and outlined in black to read at a glance.
 
 ## The rules
 

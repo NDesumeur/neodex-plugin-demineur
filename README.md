@@ -10,6 +10,9 @@ Le démineur classique : ouvre toutes les cases qui ne cachent pas de mine, en t
 - **Clic droit** : poser un drapeau, puis un « ? », puis rien.
 - **Clic sur un chiffre** dont tous les drapeaux sont posés (ou **clic molette**, ou les **deux boutons** à la fois) : ouvre toutes ses voisines d'un coup.
 - **Clic sur le visage** : nouvelle partie.
+- **PLEIN ÉCRAN** : la grille seule, sur tout l'écran.
+
+La grille prend toute la place qui reste sous l'en-tête : sur un grand écran, les cases grandissent. Les cases fermées sont en relief, les chiffres sont gros, colorés et bordés de noir pour se lire d'un coup d'œil.
 
 ## Les règles
 

@@ -1,16 +1,19 @@
 {
   "id": "neodex.demineur",
   "name": "Démineur",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "author": "NDesumeur",
-  "description": "Le démineur classique : ouvre toutes les cases sans mine en lisant les chiffres, pose des drapeaux au clic droit et ouvre les voisines d'un chiffre en un clic. Débutant, Intermédiaire, Expert ou plateau sur mesure, premier clic toujours sûr, mode « sans hasard » qui se résout entièrement par la logique, indices, et meilleurs temps et séries par niveau.",
+  "description": "Le démineur classique : ouvre toutes les cases sans mine en lisant les chiffres, pose des drapeaux au clic droit et ouvre les voisines d'un chiffre en un clic. Débutant, Intermédiaire, Expert ou plateau sur mesure, premier clic toujours sûr, mode « sans hasard » qui se résout entièrement par la logique, indices, et meilleurs temps et séries par niveau. En pixel art, avec des cases en relief et de gros chiffres colorés, une grille qui prend toute la place de l'écran, et le plein écran.",
   "icon": "icon.png",
   "entry": "index.js",
   "view": "demineur",
   "neobase": ">=4.0.0",
   "type": "app",
   "category": "Jeux",
-  "compatibility": ["windows", "linux"],
+  "compatibility": [
+    "windows",
+    "linux"
+  ],
   "syncMode": "progression",
   "syncInfo": "Meilleurs temps.",
   "mobile": false,
