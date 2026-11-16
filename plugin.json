@@ -1,7 +1,7 @@
 {
   "id": "neodex.demineur",
   "name": "Démineur",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "NDesumeur",
   "description": "Le démineur classique : ouvre toutes les cases sans mine en lisant les chiffres, pose des drapeaux au clic droit et ouvre les voisines d'un chiffre en un clic. Débutant, Intermédiaire, Expert ou plateau sur mesure, premier clic toujours sûr, mode « sans hasard » qui se résout entièrement par la logique, indices, et meilleurs temps et séries par niveau. En pixel art, avec des cases en relief et de gros chiffres colorés, une grille qui prend toute la place de l'écran, et le plein écran.",
   "icon": "icon.png",
