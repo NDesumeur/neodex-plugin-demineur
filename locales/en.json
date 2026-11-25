@@ -74,5 +74,18 @@
  "nombre de mines": "number of mines",
  "plateau sans hasard": "board without guessing",
  "démineur": "minesweeper",
- "Rien n'est synchronisé : tes records restent sur cet appareil.": "Nothing is synced: your records stay on this device."
+ "Rien n'est synchronisé : tes records restent sur cet appareil.": "Nothing is synced: your records stay on this device.",
+ "Premier déminage": "First sweep",
+ "Gagner une partie": "Win a game",
+ "Démineur confirmé": "Seasoned sweeper",
+ "Gagner une partie Intermédiaire": "Win an Intermediate game",
+ "Gagner une partie Expert": "Win an Expert game",
+ "Éclair": "Lightning",
+ "Gagner en Débutant en moins de 10 secondes, sans indice": "Win a Beginner game in under 10 seconds, without hints",
+ "Sang-froid": "Nerves of steel",
+ "Gagner en Expert en moins de 3 minutes, sans indice": "Win an Expert game in under 3 minutes, without hints",
+ "En série": "On a roll",
+ "Gagner 5 parties de suite au même niveau": "Win 5 games in a row at the same level",
+ "Centurion": "Centurion",
+ "Gagner 100 parties": "Win 100 games"
 }

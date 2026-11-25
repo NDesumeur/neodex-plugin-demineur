@@ -1,7 +1,7 @@
 {
   "id": "neodex.demineur",
   "name": "Démineur",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "author": "NDesumeur",
   "description": "Le démineur classique : ouvre toutes les cases sans mine en lisant les chiffres, pose des drapeaux au clic droit et ouvre les voisines d'un chiffre en un clic. Débutant, Intermédiaire, Expert ou plateau sur mesure, premier clic toujours sûr, mode « sans hasard » qui se résout entièrement par la logique, indices, et meilleurs temps et séries par niveau. En pixel art, avec des cases en relief et de gros chiffres colorés, une grille qui prend toute la place de l'écran, et le plein écran.",
   "icon": "icon.png",
@@ -22,5 +22,63 @@
   "sdk": "2.1.0",
   "permissions": [
     "storage"
+  ],
+  "succes": [
+    {
+      "id": "premiere",
+      "nom": "Premier déminage",
+      "texte": "Gagner une partie"
+    },
+    {
+      "id": "intermediaire",
+      "nom": "Démineur confirmé",
+      "texte": "Gagner une partie Intermédiaire"
+    },
+    {
+      "id": "expert",
+      "nom": "Expert",
+      "texte": "Gagner une partie Expert"
+    },
+    {
+      "id": "eclair",
+      "nom": "Éclair",
+      "texte": "Gagner en Débutant en moins de 10 secondes, sans indice"
+    },
+    {
+      "id": "expert-rapide",
+      "nom": "Sang-froid",
+      "texte": "Gagner en Expert en moins de 3 minutes, sans indice"
+    },
+    {
+      "id": "serie",
+      "nom": "En série",
+      "texte": "Gagner 5 parties de suite au même niveau"
+    },
+    {
+      "id": "cent",
+      "nom": "Centurion",
+      "texte": "Gagner 100 parties",
+      "cache": true
+    }
+  ],
+  "records": [
+    {
+      "id": "debutant",
+      "nom": "Débutant",
+      "sens": "bas",
+      "format": "temps"
+    },
+    {
+      "id": "intermediaire",
+      "nom": "Intermédiaire",
+      "sens": "bas",
+      "format": "temps"
+    },
+    {
+      "id": "expert",
+      "nom": "Expert",
+      "sens": "bas",
+      "format": "temps"
+    }
   ]
 }

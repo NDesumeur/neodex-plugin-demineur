@@ -297,6 +297,9 @@ export default async function (ctx) {
   const saveGames = () => { clearTimeout(gamesTimer); gamesTimer = setTimeout(() => { gamesTimer = null; folder.write('games', games).catch(() => {}); }, 500); };
   const best = (k, v, higher = true) => { const b = games.best[k]; if (b == null || (higher ? v > b : v < b)) { games.best[k] = v; saveGames(); return true; } return false; };
   const gstore = (k, init) => (games[k] ??= init);  // la section d'un jeu
+  // les trophées de NeoDex (3.4.8 et plus) : succès et records déclarés dans plugin.json ; sur un NeoDex plus ancien, rien ne se passe
+  const trophy = id => { ctx.games?.unlock(id).catch(() => {}); };
+  const trophyRecord = (id, v) => { if (v != null && Number.isFinite(+v)) ctx.games?.record(id, +v).catch(() => {}); };
 function gameLoop(st, appKey, update, draw) {
   cancelAnimationFrame(st.raf);
   const STEP = 1000 / 60; let acc = 0, last = performance.now();
@@ -430,7 +433,15 @@ function msWin() {
 function msRecord(won) {
   const st = (msSave().stats[ms.level] ||= {played: 0, won: 0, streak: 0, best: 0});
   st.played++; if (won) { st.won++; st.streak++; st.best = Math.max(st.best, st.streak); } else st.streak = 0;
-  saveGames(); msInfo();
+  saveGames(); msInfo(); msTrophies();
+}
+// les trophées, tirés des statistiques et des records (aussi à l'ouverture : ce qui a été fait avant compte)
+function msTrophies() {
+  const s = msSave().stats, b = k => games.best['mines_' + k], won = Object.values(s).reduce((t, x) => t + (x.won || 0), 0);
+  for (const k of ['debutant', 'intermediaire', 'expert']) trophyRecord(k, b(k));
+  if (won) trophy('premiere'); if (s.intermediaire?.won) trophy('intermediaire'); if (s.expert?.won) trophy('expert');
+  if (b('debutant') < 10) trophy('eclair'); if (b('expert') < 180) trophy('expert-rapide');
+  if (Object.values(s).some(x => x.best >= 5)) trophy('serie'); if (won >= 100) trophy('cent');
 }
 let msTimerId = 0;
 function msTimer() { clearInterval(msTimerId); msTimerId = setInterval(() => { if (ms?.state !== 'play') return clearInterval(msTimerId); if (view.classList.contains('on')) msDraw(); }, 250); }
@@ -569,5 +580,5 @@ $('msCanvas').__ms = {st: () => ms, check: msCheck, open: i => { msOpen(i); msDr
   console.assert(msAround(0, 9, 9).length === 3 && msAround(40, 9, 9).length === 8, 'msAround');
 }  // (non indenté : les textes sur plusieurs lignes restent exactement les tiens)
   // ---- fin ----
-  ctx.onOpen(() => { msOpenApp(); });
+  ctx.onOpen(() => { msOpenApp(); msTrophies(); });
 }
